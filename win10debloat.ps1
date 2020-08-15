@@ -41,6 +41,7 @@ $tweaks = @(
 	"InstallVSCode",
 	"InstallMediaPlayerClassic",
 	"InstallMediaPlayerVLC",
+	"InstallChrome",
 	### Windows Apps
 	"DebloatAll",
 
@@ -239,6 +240,11 @@ Function InstallMediaPlayerClassic {
 Function InstallMediaVLC {
 	Write-Output "Installing VLC"
 	choco install vlc -y
+}
+
+Function InstallChrome {
+	Write-Output "Installing Adobe Acrobat Reader"
+	choco install googlechrome -y
 }
 
 ##########
